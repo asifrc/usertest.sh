@@ -1,0 +1,15 @@
+{
+  "name": "usertest.sh",
+  "homepage": "https://github.com/asifrc/usertest.sh",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/scripts/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "xterm.js": "^2.3.2"
+  }
+}

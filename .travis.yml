@@ -1,6 +1,10 @@
 language: node_js
 node_js:
 - '0.11'
+before_install:
+- npm install -g bower
+install:
+- bower install
 script:
 - echo Nothing to test yet
 deploy:
