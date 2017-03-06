@@ -8,7 +8,10 @@
   <p>Developers are Users too..</p>
   <div id="terminal"></div>
   <script type="text/javascript">
-    terminal = new Terminal()
+    terminal = new Terminal({
+      cursorBlink: true
+    })
     terminal.open(document.getElementById('terminal'));
+    terminal.writeln("Welcome to usertest.sh!");
   </script>
 </body>
