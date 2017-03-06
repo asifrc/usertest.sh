@@ -3,4 +3,14 @@ node_js:
 - '0.11'
 - '0.10'
 script:
-  - echo Nothing to test yet
+- echo Nothing to test yet
+deploy:
+  provider: s3
+  access_key_id: AKIAJWBCUF2MOX7EQU2Q
+  secret_access_key:
+    secure: jkdTMrh54Bs1cTjj/b9ivqwU+r4cebrYnZ4zzCwT4y1sfcuPAzomAaOUzgv/JBHSU/hDW0cxJiP1X0IdM9WodwZ/tnnKttw04Cg5evEKtab5uYM1+tvRsO3QhuerL5pxA41zb4z4Ro0M8R27FaFPzssgRevDgPgnCoGJy0CHWQddf+LqXOjHyUnNJMPBEFC2Wltxt45aJHdPuidGnfJjasUnYpJRBy4xVOCm6gK4sIljfY2lg2XdOo2sKKC+gn3Rt1qQOMasCOYCOzu0XORyGkjbwhbdPBVKoNb+KbJFgw4wcqyXby9e58dcDU08mnky3PUsYsOj221oX9lWKrUQ6kEkxxX6EisJEaECQgmtvH6N/ZMzfVKBDuDR82RjkaS10xWTOHXV5HS6rZ6dMSgV0MZNfmC8fVaIjjjtEvmlZkhMLqLA1MOaguxY5dqosqo7/KnkdVZfMWc2mgebURNPHXYsIqtvkcfa+e9J956kJ7GX59ukG7ePVzmAVMQ2wRKoZoYqCYEljIzwD5X4WuteXzzHDE4L/NoJ4tugas7jFdYnjMgqJb3AsDHgK5Z6cvNkl23hU42lxE+8K8+74GDJQMFMl8EBdXGuHYKa1w++Um+Zfvf6ark/MBfiHirq1WMy2FXxCqH6rT6HgOf9XV3ilyLOkNvtdnGPEuB9HGi4a60=
+  bucket: usertest.sh
+  local-dir: site
+  acl: public_read
+  on:
+    repo: asifrc/usertest.sh
