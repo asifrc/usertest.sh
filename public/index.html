@@ -1,7 +1,14 @@
 <head>
   <title>usertest.sh</title>
+  <link rel="stylesheet" href="/scripts/vendor/xterm.js/dist/xterm.css">
+  <script type="text/javascript" src="/scripts/vendor/xterm.js/dist/xterm.js"></script>
 </head>
 <body>
   <h1>usertest.sh</h1>
   <p>Developers are Users too..</p>
+  <div id="terminal"></div>
+  <script type="text/javascript">
+    terminal = new Terminal()
+    terminal.open(document.getElementById('terminal'));
+  </script>
 </body>
